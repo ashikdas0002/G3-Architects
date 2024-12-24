@@ -176,9 +176,114 @@ main {
     /* 162.5% */
 }
 
+/* Features container style   */
+.features-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.features-title {
+    display: flex;
+    align-items: center;
+
+}
+
+.features-title h2 {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.title-line {
+    height: 106px;
+    border-left: 5px solid #FF900E;
+}
+
+.features-description {
+    width: 586px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0;
+    /* 162.5% */
+}
+
+/* Features items style  */
+
+.features-item {
+    width: 586px;
+    height: 140px;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+.features-item h4 {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.features-item p {
+    width: 514px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0;
+    /* 162.5% */
+}
+
+/* .features items img style  */
 
 
 
+
+.features-btn {
+    position: relative;
+    top: -120px;
+    right: 60px;
+}
+
+.year {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    /* 107.692% */
+}
+
+.experience {
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* ---------------------------------- */
 /* responsive media quries  */
 
 
@@ -225,6 +330,7 @@ main {
     .team-title {
         width: 300px;
         text-align: center;
+        margin-top: 20px;
     }
 
     .team-description {
@@ -236,12 +342,16 @@ main {
         text-align: center;
     }
 
+    /* Features container style  */
+
+
+
 }
 
 
 /* Tablet or medium devices  */
 
-@media screen and (min-width: 576px) and (max-width:960px) {
+@media screen and (min-width: 576px) and (max-width:1100px) {
     header {
         padding: 50px;
     }
@@ -251,6 +361,25 @@ main {
     }
 
     /* teams cnontainer responsive style  */
+    .teams-container {
+        padding: 0;
+        flex-direction: column;
 
+    }
+
+    .team-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .team-description {
+        text-align: center;
+    }
+
+    .explore-more {
+        text-align: center;
+    }
+
+    /* Features container style  */
 
 }
