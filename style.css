@@ -27,7 +27,7 @@ header {
     padding: 50px 240px;
 }
 
-.nav-brnad h3 {
+.nav-brand h3 {
     color: var(--Dark-01, #131313);
     text-align: center;
     font-family: "Work Sans";
@@ -106,7 +106,75 @@ nav li a {
     margin-top: 32px;
 }
 
+/* main style  */
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* team container style  */
+.teams-container {
+    margin: 85px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams-img-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+
+
+/* team title syle  */
+
+
+
+.title-style-1 {
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-style-2 {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title-style-3 {
+    color: #FF900E;
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* team desciption style */
+
+.team-description {
+    width: 537px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0;
+    /* 162.5% */
+}
 
 
 
@@ -119,7 +187,7 @@ nav li a {
 
 @media screen and (max-width: 576px) {
     header {
-        padding: 20px;
+        padding: 0;
     }
 
     nav {
@@ -133,6 +201,41 @@ nav li a {
         display: flex;
         flex-direction: column;
     }
+
+    /* main section style  */
+
+
+
+    /* teams container responsive style */
+
+    .teams-container {
+        padding: 0;
+        flex-direction: column;
+
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-img-container img {
+        width: 200px;
+    }
+
+    .team-title {
+        width: 300px;
+        text-align: center;
+    }
+
+    .team-description {
+        width: 300px;
+        text-align: center;
+    }
+
+    .explore-more {
+        text-align: center;
+    }
+
 }
 
 
@@ -146,5 +249,8 @@ nav li a {
     nav {
         flex-direction: column;
     }
+
+    /* teams cnontainer responsive style  */
+
 
 }
