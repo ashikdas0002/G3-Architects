@@ -192,6 +192,7 @@ main {
 }
 
 .features-title h2 {
+    width: 400px;
     color: var(--Dark-01, #131313);
     font-family: "Work Sans";
     font-size: 45px;
@@ -334,17 +335,73 @@ main {
     }
 
     .team-description {
-        width: 300px;
-        text-align: center;
+        width: 200px;
+        margin: 0 auto;
     }
 
     .explore-more {
         text-align: center;
     }
 
-    /* Features container style  */
+    /* Features container  responsive style  */
 
+    .features-container {
+        flex-direction: column;
+    }
 
+    .features-title {
+        justify-content: center;
+    }
+
+    .features-title h2 {
+        width: 200px;
+    }
+
+    .title-line {
+        height: 200px;
+    }
+
+    .features-description {
+        width: 250px;
+    }
+
+    .features-item {
+        width: 200px;
+        height: 250px;
+    }
+
+    .features-item p {
+        width: 200px;
+    }
+
+    .features-img img {
+        width: 200px;
+    }
+
+    .year {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+
+    }
+
+    .experience {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .features-btn {
+        position: relative;
+        top: -0px;
+        right: 0px;
+
+    }
 
 }
 
@@ -381,5 +438,9 @@ main {
     }
 
     /* Features container style  */
+
+    .features-container {
+        flex-direction: column;
+    }
 
 }
