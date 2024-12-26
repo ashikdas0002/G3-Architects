@@ -346,8 +346,46 @@ main {
     line-height: normal;
 }
 
+/* Sponspors section style  
+*/
 
+.sponser-title {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
 
+}
+
+.sponser-description {
+    width: 542px;
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.sponser-lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.list img {
+    width: 165.833px;
+    height: 50px;
+    filter: grayscale(100%);
+
+}
 
 
 
@@ -491,7 +529,14 @@ main {
         margin-top: 20px;
     }
 
+    /* Sponspor  sectio style  */
+    .sponser-lists {
+        flex-direction: column;
+    }
 
+    .list {
+        margin-top: 20px;
+    }
 
 
 
